@@ -30,7 +30,7 @@ run_encode() {
     $x265_executable --input $input_file --preset $preset --pools 1 --frame-threads 1 --no-wpp --output $output_file --csv $csv_file
 }
 
-# Main loop to iterate over input files and resolutions
+# Main loop to iterate over input files and resolutions.
 i=0
 for input_file in "${input_files[@]}"; do
     resolution=${resolutions[i]}
